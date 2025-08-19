@@ -1,5 +1,6 @@
 import React from "react";
 import { Search } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const MobileMenu = ({
   isMobileMenuOpen,
@@ -36,27 +37,46 @@ const MobileMenu = ({
           </button>
         )}
         <nav className="flex flex-col space-y-2">
-          <a
-            href="#"
+          <ul className="flex flex-col space-y-2 decoration-0">
+            <Link to="/">
+              <li className="text-gray-800 hover:text-green-600 font-medium py-2 ">
+                {" "}
+                TokTok - Home
+              </li>
+            </Link>
+            <Link to="/aboutus">
+              {" "}
+              <li className="text-gray-600 hover:text-green-600 py-2">
+                {" "}
+                About Us
+              </li>
+            </Link>
+            <Link to="/sms-service">
+              <li className="text-gray-600 hover:text-green-600 py-2">
+                {" "}
+                SMS Service
+              </li>
+            </Link>
+          </ul>
+          {/* <a
+            href="/"
             className="text-gray-800 hover:text-green-600 font-medium py-2"
           >
-            Home
+            TokTok - Home
           </a>
-          <a href="#" className="text-gray-600 hover:text-green-600 py-2">
-            Politics
+          <a
+            href="/aboutus"
+            className="text-gray-600 hover:text-green-600 py-2"
+          >
+            About Us
           </a>
-          <a href="#" className="text-gray-600 hover:text-green-600 py-2">
-            Business
-          </a>
-          <a href="#" className="text-gray-600 hover:text-green-600 py-2">
-            Sports
-          </a>
-          <a href="#" className="text-gray-600 hover:text-green-600 py-2">
-            Entertainment
-          </a>
-          <a href="#" className="text-gray-600 hover:text-green-600 py-2">
+
+          <a
+            href="/sms-service"
+            className="text-gray-600 hover:text-green-600 py-2"
+          >
             SMS Service
-          </a>
+          </a> */}
         </nav>
       </div>
     </div>
