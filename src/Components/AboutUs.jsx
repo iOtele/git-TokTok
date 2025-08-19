@@ -1,8 +1,7 @@
-
 import React from "react";
 import { Users, Target, Heart, Award, ArrowBigLeft } from "lucide-react";
 import TokTokLanding from "./LandingPage";
-
+import TokTokWhy from "./TokTokWhy";
 const aboutSections = [
   {
     icon: Target,
@@ -32,15 +31,13 @@ const AboutUs = () => {
       <TokTokLanding />
 
       <div className="relative min-h-screen bg-gradient-to-br from-green-50 to-green-100 p-8">
- 
-      <ArrowBigLeft
-              className="absolute top-30 left-20 text-green-600 cursor-pointer z-20 hover:scale-105 transition-transform"
-              size={45}
-              onClick={() => window.history.back()}
-            />
+        <ArrowBigLeft
+          className="absolute top-30 left-20 text-green-600 cursor-pointer z-20 hover:scale-105 transition-transform"
+          size={45}
+          onClick={() => window.history.back()}
+        />
 
         <div className="max-w-6xl mx-auto relative">
-       
           <div className="text-center mb-12 mt-20">
             <h1 className="text-4xl font-bold text-green-600 mb-6 tracking-wide">
               ABOUT US
@@ -76,6 +73,7 @@ const AboutUs = () => {
           <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-green-300 rounded-full opacity-20 translate-x-1/2 translate-y-1/2"></div>
         </div>
       </div>
+      <TokTokWhy />
     </>
   );
 };
