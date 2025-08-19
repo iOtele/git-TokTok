@@ -58,25 +58,6 @@ const MobileMenu = ({
               </li>
             </Link>
           </ul>
-          {/* <a
-            href="/"
-            className="text-gray-800 hover:text-green-600 font-medium py-2"
-          >
-            TokTok - Home
-          </a>
-          <a
-            href="/aboutus"
-            className="text-gray-600 hover:text-green-600 py-2"
-          >
-            About Us
-          </a>
-
-          <a
-            href="/sms-service"
-            className="text-gray-600 hover:text-green-600 py-2"
-          >
-            SMS Service
-          </a> */}
         </nav>
       </div>
     </div>

@@ -4,7 +4,7 @@ const NavBar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "AboutUs", path: "/aboutus" },
-    { name: "SMS Service", path: "/sms-service" },
+    { name: "SMS Service", path: "/howitworks" },
   ];
 
   return (

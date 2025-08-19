@@ -2,10 +2,11 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TokToknews from "./Pages/TokToknews";
 import AboutUs from "./Components/AboutUs";
+import TokTokHowItWorks from "./Components/TokTokHowItWorks";
 
-const SMSServicesPromotion = () => (
-  <div className="p-8">SMSServicesPromotion</div>
-);
+// const SMSServicesPromotion = () => (
+//   <div className="p-8">SMSServicesPromotion</div>
+// );
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<TokToknews />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/sms-service" element={<SMSServicesPromotion />} />
+        <Route path="/howitworks" element={<TokTokHowItWorks />} />
       </Routes>
     </BrowserRouter>
   );

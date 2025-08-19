@@ -1,8 +1,14 @@
 import React from "react";
+import { ArrowBigLeft } from "lucide-react";
 
 const TokTokLanding = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 flex flex-col items-center justify-center p-8 relative overflow-hidden">
+      <ArrowBigLeft
+        className="absolute top-20 left-20 text-green-600 cursor-pointer z-20 hover:scale-105 transition-transform"
+        size={45}
+        onClick={() => window.history.back()}
+      />
       <div className="absolute top-20 right-20 w-32 h-32 border-2 border-green-300 rounded-full opacity-50"></div>
       <div className="absolute top-32 right-12 w-20 h-20 border-2 border-green-300 rounded-full opacity-30"></div>
       <div className="absolute top-16 right-32 w-16 h-16 border-2 border-green-300 rounded-full opacity-40"></div>
@@ -34,7 +40,6 @@ const TokTokLanding = () => {
             </div>
           </div>
 
-          {/* Text content */}
           <div className="flex-1 max-w-3xl">
             <p className="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-medium leading-relaxed">
               <span className="font-bold text-green-600">TokTok</span> is a
